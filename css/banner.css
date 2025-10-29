@@ -1,4 +1,4 @@
-/* BANNER: contenedor principal del logo y su entorno */
+/* Este es el BANNER  */
 .banner {
   min-height: 70dvh;
   display: grid;
@@ -31,7 +31,7 @@
   box-shadow: 0 18px 60px rgba(0,0,0,.5);
 }
 
-/* Imagen del logo */
+/* Aqui usamos CSS para el logo */
 #logo {
   max-width: 70%;
   height: auto;
@@ -42,7 +42,7 @@
   transition: transform .22s ease, box-shadow .22s ease;
 }
 
-/* Hover: agranda el logo ligeramente */
+/* Hover lo usamos para agrandar el logo ligeramente */
 #logo:hover {
   transform: scale(1.04);
   box-shadow: 0 18px 44px rgba(59,130,246,.35);

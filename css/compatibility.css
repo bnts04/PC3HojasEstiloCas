@@ -1,4 +1,4 @@
-/* COMPATIBILIDAD: prefijos para navegadores antiguos */
+/* COMPATIBILIDAD , usamos los prefijos para navegadores antiguos */
 
 .logo-wrap {
   -webkit-perspective: 900px;
