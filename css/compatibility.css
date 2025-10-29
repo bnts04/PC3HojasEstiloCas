@@ -1,0 +1,38 @@
+/* COMPATIBILIDAD: prefijos para navegadores antiguos */
+
+.logo-wrap {
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+}
+
+#logo {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+
+  -webkit-transition: -webkit-transform .22s ease, box-shadow .22s ease;
+  -moz-transition: -moz-transform .22s ease, box-shadow .22s ease;
+}
+
+/* Keyframes con prefijos */
+@-webkit-keyframes growSpin3D {
+  0%   { -webkit-transform: rotateY(0deg) scale(0.7); opacity: 0; }
+  60%  { -webkit-transform: rotateY(300deg) scale(1.05); opacity: 1; }
+  100% { -webkit-transform: rotateY(360deg) scale(1); opacity: 1; }
+}
+@-moz-keyframes growSpin3D {
+  0%   { -moz-transform: rotateY(0deg) scale(0.7); opacity: 0; }
+  60%  { -moz-transform: rotateY(300deg) scale(1.05); opacity: 1; }
+  100% { -moz-transform: rotateY(360deg) scale(1); opacity: 1; }
+}
+
+@-webkit-keyframes floatY {
+  0%   { -webkit-transform: translateY(0); }
+  100% { -webkit-transform: translateY(-8px); }
+}
+@-moz-keyframes floatY {
+  0%   { -moz-transform: translateY(0); }
+  100% { -moz-transform: translateY(-8px); }
+}

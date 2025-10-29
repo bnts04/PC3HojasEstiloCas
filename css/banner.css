@@ -1,0 +1,49 @@
+/* BANNER: contenedor principal del logo y su entorno */
+.banner {
+  min-height: 70dvh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 32px 16px 48px;
+  background:
+    radial-gradient(1200px 600px at 10% -20%, rgba(59,130,246,.18), transparent 70%),
+    radial-gradient(1000px 500px at 120% 0%, rgba(16,185,129,.18), transparent 70%),
+    #0f1115;
+}
+
+/* Contenedor del logo con efecto 3D */
+.logo-wrap {
+  display: grid;
+  place-items: center;
+  width: clamp(260px, 40vw, 380px);
+  height: clamp(260px, 40vw, 380px);
+  border-radius: 24px;
+  background: #12151c;
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  perspective: 900px;
+
+  transition: background .28s ease, box-shadow .28s ease, transform .28s ease;
+}
+
+.logo-wrap:hover {
+  background: #151b24;
+  box-shadow: 0 18px 60px rgba(0,0,0,.5);
+}
+
+/* Imagen del logo */
+#logo {
+  max-width: 70%;
+  height: auto;
+  transform-origin: center;
+  backface-visibility: hidden;
+  will-change: transform, box-shadow;
+  box-shadow: 0 12px 28px rgba(59,130,246,.25);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+/* Hover: agranda el logo ligeramente */
+#logo:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 44px rgba(59,130,246,.35);
+}
